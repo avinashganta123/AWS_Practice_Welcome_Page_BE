@@ -1,0 +1,14 @@
+{
+  "name": "login-backend",
+  "version": "1.0.0",
+  "description": "Simple login backend for 3-tier AWS app",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mysql2": "^3.3.3"
+  }
+}
