@@ -8,14 +8,14 @@ app.use(express.json());
 
 // 🔧 Replace these with your actual RDS credentials
 const db = mysql.createConnection({
-  host: 'localhost', // or your RDS endpoint
-  user: 'admin',
-  password: 'password',
+  host: 'database-1.cnissc2cyvp3.ap-south-1.rds.amazonaws.com', // or your RDS endpoint
+  user: 'root',
+  password: 'MCqvSMf9lIutG3wlcR6s',
   database: 'login_app'
 });
 
 // ✅ GET route for ALB health checks
-app.get('/api/health', (req, res) => {
+app.get('/', (req, res) => {
   res.status(200).send('OK');
 });
 
